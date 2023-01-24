@@ -77,7 +77,8 @@ section{
     height: 50px;
     background-color: #D9D9D9;
     color: #121212;
-    border-bottom: #6D0001 solid 3px;    
+   
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1);
     transition: all 0.2s;
 }
 
@@ -88,7 +89,8 @@ section{
     height: 50px;
     background-color: #D9D9D9;
     color: #121212;
-    border-bottom: #6D0001 solid 3px;    
+     
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1); 
     transition: all 0.2s;  
 }
 
@@ -99,7 +101,8 @@ section{
     height: 50px;
     background-color: #D9D9D9;
     color: #121212;
-    border-bottom: #6D0001 solid 3px;
+    
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1);
     transition: all 0.2s;
 }
 
@@ -187,7 +190,7 @@ footer p{
 
 #hr{
     border: 1.9px solid;
-    border-color: #6D0001;
+    border-color: #C30F11;
     margin-left: 10px;
     margin-right: 10px;
 }
