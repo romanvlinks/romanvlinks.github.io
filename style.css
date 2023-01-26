@@ -52,7 +52,8 @@ header ul{
     width: 40px;
 }
 
-.shadow-icons{
+.shadow-icon{
+    display: block;
    text-align: center;
 }
 
