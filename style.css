@@ -33,13 +33,15 @@ nav li{
 
 .name{
     text-align: center;
+   
 }
 
-header a{
+.linkname{
     text-decoration: none;
+    
 }
 
-header a:hover{
+.linkname:hover{
     text-decoration: underline;
 }
 
