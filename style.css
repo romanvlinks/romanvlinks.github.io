@@ -52,7 +52,14 @@ header ul{
 
 #icons-nav{
     width: 40px;
+    transition: all .1s;
 }
+
+#icons-nav:hover{
+    translate: 0px -1px;
+}
+
+
 
 .shadow-icon{
     display: block;
@@ -62,6 +69,8 @@ header ul{
 #red-shadow{
     width: 40px;
 }
+
+
 
 
 /*---SECTION---*/
