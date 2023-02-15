@@ -10,6 +10,7 @@ let search = document.getElementById("search");
 
 search.addEventListener("click", () => {
   historial.classList.toggle("action2");
+  search.classList.toggle("action3");
 });
 
 let btnsearchHi = document.getElementById("button-search21");
@@ -60,13 +61,3 @@ document.addEventListener("keyup", (event) => {
     entrada.value = "";
   }
 });
-
-let borrar = document.getElementById("borrar");
-
-let largo = entrada.value;
-
-console.log(largo);
-
-if (largo.length >= 1) {
-  borrar.style.display = "block";
-}
