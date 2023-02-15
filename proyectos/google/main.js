@@ -29,6 +29,8 @@ btnsearchHi.addEventListener("click", () => {
 
   ul.appendChild(sal);
 
+  window.location.href = `https://www.google.com/search?q=${busqueda}`;
+
   entrada.value = "";
 });
 
@@ -42,6 +44,8 @@ btnsearch.addEventListener("click", () => {
   sal.appendChild(txt);
 
   ul.appendChild(sal);
+
+  window.location.href = `https://www.google.com/search?q=${busqueda}`;
 
   entrada.value = "";
 });
@@ -57,6 +61,8 @@ document.addEventListener("keyup", (event) => {
     sal.appendChild(txt);
 
     ul.appendChild(sal);
+
+    window.location.href = `https://www.google.com/search?q=${busqueda}`;
 
     entrada.value = "";
   }
