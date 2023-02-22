@@ -182,9 +182,9 @@ section{
 #steam:hover{
     background-position: 50%;
     background-color: #1DB954;
-    background-image: url(/images/icons/timer.svg);
+    background-image: url(/proyectos/todolist/images/bonfire.gif);
     background-repeat: no-repeat;
-    background-size: 15px;  
+    background-size: 30px;  
     background-color: black;
     border: none;
     box-shadow: 1px 1px 49px -27px rgba(0,0,0,0.75) inset;
@@ -195,7 +195,7 @@ section{
 }
 
 #steam:active{
-    background-size: 30px;
+    background-size: 20px;
 }
 
 #twitch:hover{

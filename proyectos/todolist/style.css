@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.container{
+    width: 380px;
+    height: 844px;
+    background-color: #121212;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+    
+    
+   
+
+}
+.blur{
+    filter: blur(4px);
+}
+.popupcancelar{
+   
+    width: 380px;
+    height: 844px;
+    position:absolute;
+    display: flex;
+}
+
+.header{
+    width: 100%;
+    height: 68px;
+    background-color: #552665;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tittle{
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu{
+    background-image: url(./images/menu.svg);
+}
+
+section{
+    height: 100%;
+}
+
+.bonfire{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+    
+}
+
+.bonfiretxt{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.btnagregar{
+    
+    position: relative;
+    left: 275px;
+    top: 672px;
+}
+#btnagregar{
+    background-color: transparent;
+    border: none;
+}
+
+#btnagregar:hover{
+    cursor: pointer;
+}
+
+.agregarcontainer{
+    display: none;
+    
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+}
+
+.containertarea{
+    width: 253px;
+    height: 483px;
+}
+
+.agregartarea{
+    display: flex;
+    width: 308px;
+    height: 546px;
+    background-color: #333232;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+}
+
+.tittletarea{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+}
+
+.tarea-name{
+    margin-bottom: 15px;
+}
+
+.p-tareamenu{
+    color: #ABA5A5;
+    font-size: 12px;
+}
+
+.input{
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    height: 41px;
+    width: 100%;
+    padding-left: 6px;
+    margin-top: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input:hover{
+    outline: 2px solid purple;
+}
+
+.input:focus-visible{
+   border: none;
+   border-style: none;
+   box-shadow: none;
+   outline: 2px solid purple;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.descripcion{
+    height: 91px;
+    width: 100%;
+    resize: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    
+}
+
+.descripcion:hover{
+    outline: 2px solid purple;
+}
+
+.descripcion:focus-visible{
+    border: none;
+    border-style: none;
+    box-shadow: none;
+    border: 2px solid purple;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+
+
+ .select{
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    height: 41px;
+    width: 100%;
+    padding-left: 6px;
+    margin-top: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .select:hover{
+    outline: 2px solid purple;
+ }
+
+ .select:focus-visible{
+    border: none;
+    border-style: none;
+    box-shadow: none;
+    outline: 2px solid purple;
+ 
+ }
+
+ .prioridad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+ }
+
+ .colores{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    margin-top: 10px;
+ }
+
+ .color{
+    width:36px;
+    height: 36px;
+    border-radius: 8px;
+    transition: all 0.1s ;
+ }
+
+ .color:hover{
+    cursor: pointer;
+    translate: 0px -3px;
+ }
+
+ .color:active{
+    transform:scale(0.8);
+ }
+
+ .purpura{
+    background-color: #854BB3;
+ }
+ .verde{
+    background-color: #7CBE0F;
+ }
+ .amarillo{
+    background-color: #FFB72D;
+ }
+ .rojo{
+    background-color: #C83232;
+ }
+
+
+ .botones{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+ }
+ .btn{
+    width: 82px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.1s ;
+    
+ }
+
+ .btn:hover{
+    transform:scale(1.04);
+ }
+
+ .btn:active{
+    transform:scale(0.8);
+ }
+
+ .cancelar{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+ }
+
+ .btn:hover{
+    cursor: pointer;
+ }
+
+ .hidden{
+    display: none;
+ }
+
+ .active{
+    display: flex;
+ }
+ 
+#checkbox{
+    appearance: none;
+    
+    width:36px;
+    height: 36px;
+    border-radius: 8px;
+    transition: all 0.1s ;
+ }
+
+ #checkbox:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ #checkbox:active{
+    transform: scale(0.9);
+ }
+
+ #checkbox:checked{
+    transform: scale(1.2);
+    border: 2px solid #fff;
+ }
+
+
+ .tareas{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: none;
+    justify-content: center;
+    
+ }
+
+
+ .tareaspendientes{
+    display: flex;
+    height: 108px;
+    width: 355px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+ }
+
+ .colortarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 108px;
+    background-color: black;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+ }
+
+ .data{
+    width: 162px;
+ }
+
+ .botonestarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+ }
+
+ .borrada{
+    border: none;
+    margin-left: 10px;
+    transition: all 0.1s;
+ }
+
+ .borrada:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+ }
+
+ .borrada:active{
+   transform: scale(0.9);
+ }
+
+ #nombretarea{
+   padding: 5px;
+ }
+
+ #descripciontarea{
+   padding: 5px;
+ }
+ 
