@@ -62,7 +62,7 @@ section{
 }
 
 .bonfire{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
@@ -80,7 +80,7 @@ section{
     
     position: relative;
     left: 275px;
-    top: 672px;
+    
 }
 #btnagregar{
     background-color: transparent;
@@ -318,9 +318,10 @@ section{
 
 
  .tareas{
-    height: 100%;
+    
     width: 100%;
-    background-color: red;
+    background-color: #121212;
+    flex-direction: column;
     display: none;
     justify-content: center;
     
@@ -334,6 +335,7 @@ section{
     background-color: #fff;
     border-radius: 8px;
     margin-top: 10px;
+    margin-left: 10px;
  }
 
  .colortarea{
@@ -342,7 +344,7 @@ section{
     align-items: center;
     height: 100%;
     width: 108px;
-    background-color: black;
+    
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
  }
@@ -379,5 +381,9 @@ section{
 
  #descripciontarea{
    padding: 5px;
+ }
+
+ .top{
+   top:557px;
  }
  
