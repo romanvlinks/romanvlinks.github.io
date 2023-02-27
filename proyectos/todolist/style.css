@@ -11,28 +11,9 @@ body{
     
 }
 
-.container{
-    width: 380px;
-    height: 844px;
-    background-color: #121212;
-    margin: auto;
-    border-radius: 8px;
-    margin-top: 40px;
-    
-    
-   
 
-}
-.blur{
-    filter: blur(4px);
-}
-.popupcancelar{
-   
-    width: 380px;
-    height: 844px;
-    position:absolute;
-    display: flex;
-}
+
+
 
 .header{
     width: 100%;
@@ -59,14 +40,15 @@ body{
 }
 
 section{
-    height: 100%;
+    height: calc(100vh - 68px);
+    background-color: #121212;
 }
 
 .bonfire{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
+    height: 85%;
     justify-content: center;
     
 }
@@ -79,8 +61,8 @@ section{
 
 .btnagregar{
     
-    position: relative;
-    left: 275px;
+    position: fixed;
+    left: 80%;
     
 }
 #btnagregar{
@@ -96,7 +78,7 @@ section{
     display: none;
     
     align-items: center;
-    height: 80%;
+    height: 85%;
     justify-content: center;
 }
 
@@ -321,10 +303,13 @@ section{
  .tareas{
     
     width: 100%;
+    height: 85%;
     background-color: #121212;
     flex-direction: column;
     display: none;
-    justify-content: center;
+    
+    align-items: center;
+    
     
  }
 
@@ -332,11 +317,11 @@ section{
  .tareaspendientes{
     display: flex;
     height: 108px;
-    width: 355px;
+    width: 80%;
     background-color: #fff;
     border-radius: 8px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 1%;
+    
  }
 
  .colortarea{
@@ -351,14 +336,16 @@ section{
  }
 
  .data{
-    width: 162px;
+    width: 80%;
  }
 
  .botonestarea{
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-right: 20px;
+    
  }
 
  .borrada{
@@ -385,6 +372,8 @@ section{
  }
 
  .top{
-   top:557px;
+   /*top:557px;*/
+   position: fixed;
+    left: 80%;
  }
  

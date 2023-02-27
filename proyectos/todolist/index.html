@@ -28,96 +28,95 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav class="nav">
-          <div>
-            <a href=""><img src="./images/menu.svg" alt="" /></a>
-          </div>
-          <div><h1 class="tittle">Dark List</h1></div>
-          <div>
-            <a href="#"><img src="./images/user.svg" alt="" /></a>
-          </div>
-        </nav>
-      </header>
-      <section>
-        <div id="bonfire" class="bonfire">
-          <img src="./images/bonfire.gif" alt="" />
-          <h1 class="bonfiretxt">Tómate un descanso</h1>
+    <header class="header">
+      <nav class="nav">
+        <div>
+          <a href=""><img src="./images/menu.svg" alt="" /></a>
         </div>
-        <div id="agregarcontainer" class="agregarcontainer">
-          <div class="agregartarea">
-            <div class="containertarea">
-              <h1 class="tittletarea">Ingresa una tarea</h1>
-              <div class="tarea-name">
-                <p class="p-tareamenu">Nombre de la tarea</p>
-                <input class="input" type="text" name="" id="tareaInput" />
+        <div><h1 class="tittle">Dark List</h1></div>
+        <div>
+          <a href="#"><img src="./images/user.svg" alt="" /></a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div id="bonfire" class="bonfire">
+        <img src="./images/bonfire.gif" alt="" />
+        <h1 class="bonfiretxt">Tómate un descanso</h1>
+      </div>
+      <div id="agregarcontainer" class="agregarcontainer">
+        <div class="agregartarea">
+          <div class="containertarea">
+            <h1 class="tittletarea">Ingresa una tarea</h1>
+            <div class="tarea-name">
+              <p class="p-tareamenu">Nombre de la tarea</p>
+              <input class="input" type="text" name="" id="tareaInput" />
+            </div>
+            <div class="tarea-name">
+              <p class="p-tareamenu">Tipo de tarea</p>
+              <form>
+                <select class="select" id="select" name="tipo de tarea">
+                  <option value="trabajo">Trabajo</option>
+                  <option value="personal">Personal</option>
+                  <option value="domestica">Domestica</option>
+                  <option value="Entretenimiento">Entretenimiento</option>
+                </select>
+              </form>
+            </div>
+            <div class="tarea-name">
+              <p class="p-tareamenu">Descripcion</p>
+              <textarea
+                class="descripcion"
+                name=""
+                id="descripcionTxt"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="prioridad">
+              <p class="p-tareamenu">Prioridad</p>
+              <div class="colores">
+                <input
+                  class="check purpura"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+                <input
+                  class="check verde"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+                <input
+                  class="check amarillo"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+                <input
+                  class="check rojo"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
               </div>
-              <div class="tarea-name">
-                <p class="p-tareamenu">Tipo de tarea</p>
-                <form>
-                  <select class="select" id="select" name="tipo de tarea">
-                    <option value="trabajo">Trabajo</option>
-                    <option value="personal">Personal</option>
-                    <option value="domestica">Domestica</option>
-                    <option value="Entretenimiento">Entretenimiento</option>
-                  </select>
-                </form>
-              </div>
-              <div class="tarea-name">
-                <p class="p-tareamenu">Descripcion</p>
-                <textarea
-                  class="descripcion"
-                  name=""
-                  id="descripcionTxt"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-              <div class="prioridad">
-                <p class="p-tareamenu">Prioridad</p>
-                <div class="colores">
-                  <input
-                    class="check purpura"
-                    type="radio"
-                    name="colorsito"
-                    id="checkbox"
-                  />
-                  <input
-                    class="check verde"
-                    type="radio"
-                    name="colorsito"
-                    id="checkbox"
-                  />
-                  <input
-                    class="check amarillo"
-                    type="radio"
-                    name="colorsito"
-                    id="checkbox"
-                  />
-                  <input
-                    class="check rojo"
-                    type="radio"
-                    name="colorsito"
-                    id="checkbox"
-                  />
-                </div>
-              </div>
-              <div class="botones">
-                <button id="btnCancelar" class="cancelar btn">Cancelar</button>
-                <button id="btnConfirmar" class="agregar btn">Agregar</button>
-              </div>
+            </div>
+            <div class="botones">
+              <button id="btnCancelar" class="cancelar btn">Cancelar</button>
+              <button id="btnConfirmar" class="agregar btn">Agregar</button>
             </div>
           </div>
         </div>
-        <div id="tareas" class="tareas"></div>
-        <div class="btnagregar">
-          <button id="btnagregar">
-            <img src="./images/botonagregar.svg" alt="" />
-          </button>
-        </div>
-      </section>
-    </div>
+      </div>
+      <div id="tareas" class="tareas"></div>
+      <div class="btnagregar">
+        <button id="btnagregar">
+          <img src="./images/botonagregar.svg" alt="" />
+        </button>
+      </div>
+    </section>
+
     <script src="main.js"></script>
   </body>
 </html>

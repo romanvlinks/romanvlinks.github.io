@@ -22,9 +22,7 @@ btnAdd.addEventListener("click", () => {
   if (cantidadDeTareas >= 1) {
     bonfire.classList.add("hidden");
     agregarContainer.classList.toggle("active");
-    tareas.classList.add("hidden");
     tareas.style.display = "none";
-    btnAdd.classList.remove("top");
     btnAdd.classList.toggle("hidden");
   }
 });
@@ -33,13 +31,13 @@ btnCancelar.addEventListener("click", () => {
   if (cantidadDeTareas <= 0) {
     bonfire.classList.toggle("hidden");
     agregarContainer.classList.toggle("active");
-    btnAdd.classList.toggle("hidden");
+    btnAdd.classList.remove("hidden");
   }
   if (cantidadDeTareas >= 1) {
     agregarContainer.classList.add("hidden");
     agregarContainer.classList.remove("active");
     tareas.style.display = "flex";
-    btnAdd.classList.add("top");
+    btnAdd.classList.toggle("hidden");
   }
 });
 let nombreTarea = tareaInput.value;
@@ -90,9 +88,8 @@ btnConfirmar.addEventListener("click", () => {
   agregarContainer.classList.add("hidden");
   agregarContainer.classList.remove("active");
   tareas.style.display = "flex";
-  btnAdd.style.display = "flex";
-  btnAdd.style.position = "absolute";
-  btnAdd.classList.add("top");
+
+  btnAdd.classList.toggle("hidden");
 
   tareaPendiente = `<div id="tareasPendientes" class="tareaspendientes">
   <div class="colortarea ${colorFondo}">
