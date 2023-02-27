@@ -6,6 +6,7 @@ let btnConfirmar = document.getElementById("btnConfirmar");
 let color = document.querySelector('input[name="colorsito"]:checked');
 let tareas = document.getElementById("tareas");
 let tareasPendientes = document.getElementById("tareasPendientes");
+let btnBorrar = document.getElementById("btnBorrar");
 
 //Inputs
 let tareaInput = document.getElementById("tareaInput");
@@ -88,7 +89,6 @@ btnConfirmar.addEventListener("click", () => {
   agregarContainer.classList.add("hidden");
   agregarContainer.classList.remove("active");
   tareas.style.display = "flex";
-
   btnAdd.classList.toggle("hidden");
 
   tareaPendiente = `<div id="tareasPendientes" class="tareaspendientes">
@@ -102,17 +102,20 @@ btnConfirmar.addEventListener("click", () => {
   <div class="botonestarea">
     <input type="checkbox" name="" id="completada" />
     <button id="btnBorrar" class="borrada">
-      <img src="./images/borrar.svg" alt="" />
+      <img class="remover" src="./images/borrar.svg" alt="" />
     </button>
   </div>
 </div>`;
   tareas.innerHTML += tareaPendiente;
   console.log(color);
-
-  let btnBorrar = document.getElementById("btnBorrar");
-  btnBorrar.addEventListener("click", () => {
-    alert("Todavia no está programada xD");
-  });
 });
 
 let cantidadDeTareas = 0;
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList == "remover") {
+    const tarea = e.target.parentNode.parentNode.parentNode;
+    tarea.remove();
+  }
+  cantidadDeTareas - 1;
+});

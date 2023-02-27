@@ -354,6 +354,8 @@ section{
     transition: all 0.1s;
  }
 
+ 
+
  .borrada:hover{
    cursor: pointer;
    transform: scale(1.1);
