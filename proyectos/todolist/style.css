@@ -396,6 +396,7 @@ section{
    background-image: url(./images/check.svg);
    background-repeat: no-repeat;
    background-position: center;
+   border: none;
 }
 
 #completada:active{
