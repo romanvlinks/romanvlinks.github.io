@@ -42,6 +42,7 @@ btnCancelar.addEventListener("click", () => {
   }
 });
 let nombreTarea = tareaInput.value;
+
 const enviarDatos = () => {
   let nombreTarea = tareaInput.value;
   let descripcion = descripcionTxt.value;
@@ -107,15 +108,17 @@ btnConfirmar.addEventListener("click", () => {
   </div>
 </div>`;
   tareas.innerHTML += tareaPendiente;
-  console.log(color);
-});
 
-let cantidadDeTareas = 0;
+  tareaInput.value = "";
+  descripcionTxt.value = "";
+  select.value = "";
+});
 
 document.addEventListener("click", (e) => {
   if (e.target.classList == "remover") {
     const tarea = e.target.parentNode.parentNode.parentNode;
     tarea.remove();
   }
-  cantidadDeTareas - 1;
 });
+
+let cantidadDeTareas = 0;
