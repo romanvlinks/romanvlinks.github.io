@@ -147,6 +147,12 @@ document.addEventListener("click", (e) => {
   if (e.target.classList == "imgSelect blackmage") {
     gifBack.src = "./images/blackMage.gif";
   }
+  if (e.target.classList == "imgSelect miku") {
+    gifBack.src = "./images/miku.gif";
+  }
+  if (e.target.classList == "imgSelect miki") {
+    gifBack.src = "./images/miki.gif";
+  }
 });
 
 //let cantidadDeTareas = 0;

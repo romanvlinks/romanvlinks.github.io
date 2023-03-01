@@ -478,7 +478,7 @@ section{
 .menuOpen{
    display: none;
    position: fixed;
-   height: 200px;
+   height: 275px;
    width: 200px;
    background-color: green;
    border-radius: 8px;
@@ -490,6 +490,8 @@ section{
    align-items: center;
    flex-wrap: wrap;
    gap: 0px 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
 #imgMenu{
