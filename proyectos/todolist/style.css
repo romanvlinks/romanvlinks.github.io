@@ -43,6 +43,7 @@ body{
 section{
     height: calc(100vh - 68px);
     background-color: #121212;
+    transition: all 0.1s;
 }
 
 .bonfire{
@@ -410,11 +411,50 @@ section{
    transform: scale(1);
 }
 
+#darkmode{
+   position: fixed;
+   left: 20%;
+   
+}
+
+#darkmodebtn{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: none;
+   transition: all 0.2s;
+   background-image: url(./images/sun.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   
+}
+
+#darkmodebtn:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+}
+
+.darkBack{
+   background-color: #d2d4da;
+   transition: all 0.1s;
+}
+
+#imgBtnAdd{
+   border-radius: 50%;
+}
+
+.darkBtn1{
+   box-shadow: -8px 9px 30px 0px rgba(0,0,0,0.75);
+}
+
+.darkTxt{
+   color: #121212;
+}
 
 
- .top{
+ /*.top{
    
    position: fixed;
     left: 80%;
- }
+ }*/
  

@@ -7,6 +7,19 @@ let color = document.querySelector('input[name="colorsito"]:checked');
 let tareas = document.getElementById("tareas");
 let tareasPendientes = document.getElementById("tareasPendientes");
 let btnBorrar = document.getElementById("btnBorrar");
+let darkmodebtn = document.getElementById("darkmodebtn");
+
+//Darkmode
+let section = document.getElementById("section");
+let imgBtnAdd = document.getElementById("imgBtnAdd");
+let titleBonfire = document.getElementById("titleBonfire");
+
+darkmodebtn.addEventListener("click", () => {
+  section.classList.toggle("darkBack");
+  imgBtnAdd.classList.toggle("darkBtn1");
+  tareas.classList.toggle("darkBack");
+  titleBonfire.classList.toggle("darkTxt");
+});
 
 //Inputs
 let tareaInput = document.getElementById("tareaInput");
