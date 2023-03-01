@@ -145,7 +145,7 @@ document.addEventListener("click", (e) => {
     gifBack.src = "./images/bonfire.gif";
   }
   if (e.target.classList == "imgSelect blackmage") {
-    gifBack.src = "./images/blackmage.gif";
+    gifBack.src = "./images/blackMage.gif";
   }
 });
 
