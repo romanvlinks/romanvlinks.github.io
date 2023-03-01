@@ -65,14 +65,21 @@ section{
     position: fixed;
     left: 80%;
     
+    
 }
 #btnagregar{
     background-color: transparent;
     border: none;
+    transition: all 0.2s;
 }
 
 #btnagregar:hover{
     cursor: pointer;
+    transform: scale(1.05);
+}
+
+#btnagregar:active{
+   transform: scale(0.90);
 }
 
 .agregarcontainer{

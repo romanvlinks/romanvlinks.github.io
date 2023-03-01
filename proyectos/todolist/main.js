@@ -12,6 +12,7 @@ let btnBorrar = document.getElementById("btnBorrar");
 let tareaInput = document.getElementById("tareaInput");
 let select = document.getElementById("select");
 let descripcionTxt = document.getElementById("descripcionTxt");
+let cantidadDeTareas = 0;
 
 btnAdd.addEventListener("click", () => {
   if (cantidadDeTareas <= 0) {
@@ -41,16 +42,6 @@ btnCancelar.addEventListener("click", () => {
     btnAdd.classList.toggle("hidden");
   }
 });
-let nombreTarea = tareaInput.value;
-
-const enviarDatos = () => {
-  let nombreTarea = tareaInput.value;
-  let descripcion = descripcionTxt.value;
-  let tipoDeTarea = select.value;
-  let color = document.querySelector('input[name="colorsito"]:checked')
-    .classList[1];
-  console.log(nombreTarea, tipoDeTarea, descripcion, color);
-};
 
 btnConfirmar.addEventListener("click", () => {
   let nombreTarea = tareaInput.value;
@@ -60,30 +51,32 @@ btnConfirmar.addEventListener("click", () => {
     .classList[1];
   console.log(nombreTarea, tipoDeTarea, descripcion, color);
 
-  if (tipoDeTarea == "trabajo") {
-    imgTipo = "./images/tipo/trabajo.svg";
-  }
-  if (tipoDeTarea == "personal") {
-    imgTipo = "./images/tipo/personal.svg";
-  }
-  if (tipoDeTarea == "domestica") {
-    imgTipo = "./images/tipo/casa.svg";
-  }
-  if (tipoDeTarea == "Entretenimiento") {
-    imgTipo = "./images/tipo/gaming.svg";
+  switch (tipoDeTarea) {
+    case "trabajo":
+      imgTipo = "./images/tipo/trabajo.svg";
+      break;
+    case "personal":
+      imgTipo = "./images/tipo/personal.svg";
+      break;
+    case "domestica":
+      imgTipo = "./images/tipo/casa.svg";
+      break;
+    case "Entretenimiento":
+      imgTipo = "./images/tipo/gaming.svg";
   }
 
-  if (color == "purpura") {
-    colorFondo = "purpura";
-  }
-  if (color == "rojo") {
-    colorFondo = "rojo";
-  }
-  if (color == "verde") {
-    colorFondo = "verde";
-  }
-  if (color == "amarillo") {
-    colorFondo = "amarillo";
+  switch (color) {
+    case "purpura":
+      colorFondo = "purpura";
+      break;
+    case "rojo":
+      colorFondo = "rojo";
+      break;
+    case "verde":
+      colorFondo = "verde";
+      break;
+    case "amarillo":
+      colorFondo = "amarillo";
   }
 
   cantidadDeTareas++;
@@ -116,9 +109,8 @@ btnConfirmar.addEventListener("click", () => {
 
 document.addEventListener("click", (e) => {
   if (e.target.classList == "remover") {
-    const tarea = e.target.parentNode.parentNode.parentNode;
-    tarea.remove();
+    e.target.parentNode.parentNode.parentNode.remove();
   }
 });
 
-let cantidadDeTareas = 0;
+//let cantidadDeTareas = 0;
