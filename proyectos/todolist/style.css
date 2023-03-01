@@ -38,6 +38,23 @@ body{
 
 .menu{
     background-image: url(./images/menu.svg);
+    
+    
+}
+
+#darklist{
+   margin-right: 7px;
+}
+
+#menu{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+#menu p{
+   color: #fff;
+   margin-left: 20px;
 }
 
 section{
@@ -277,13 +294,7 @@ section{
     cursor: pointer;
  }
 
- .hidden{
-    display: none;
- }
-
- .active{
-    display: flex;
- }
+ 
  
 #checkbox{
     appearance: none;
@@ -452,9 +463,55 @@ section{
 }
 
 
- /*.top{
-   
+#menu{
+   cursor: pointer;
+}
+
+.menuOpen{
+   display: none;
    position: fixed;
-    left: 80%;
- }*/
- 
+   height: 200px;
+   width: 200px;
+   background-color: green;
+   border-radius: 8px;
+   left: 10%;
+   margin-top: 10px;
+   background-color: #333232;
+   transition: all 1s;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 0px 10px;
+}
+
+#imgMenu{
+   width: 60px;
+   height: 60px;
+   cursor: pointer;
+   
+   
+   
+}
+
+.contenedorGif{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #121212;
+   border-radius: 8px;
+   width: 70px;
+   height: 70px;}
+
+.hidden{
+   display: none;
+   
+}
+
+.active{
+   display: flex;
+   
+}
+
+#gifBack{
+   max-width: 150px;
+}

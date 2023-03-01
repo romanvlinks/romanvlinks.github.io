@@ -8,6 +8,10 @@ let tareas = document.getElementById("tareas");
 let tareasPendientes = document.getElementById("tareasPendientes");
 let btnBorrar = document.getElementById("btnBorrar");
 let darkmodebtn = document.getElementById("darkmodebtn");
+let menu = document.getElementById("menu");
+let menuOpen = document.getElementById("menuOpen");
+let imgSelect = document.getElementById("imgSelect");
+let gifBack = document.getElementById("gifBack");
 
 //Darkmode
 let section = document.getElementById("section");
@@ -123,6 +127,25 @@ btnConfirmar.addEventListener("click", () => {
 document.addEventListener("click", (e) => {
   if (e.target.classList == "remover") {
     e.target.parentNode.parentNode.parentNode.remove();
+  }
+});
+
+menu.addEventListener("click", () => {
+  menuOpen.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList == "imgSelect scottP") {
+    gifBack.src = "./images/scottP.gif";
+  }
+  if (e.target.classList == "imgSelect solaire") {
+    gifBack.src = "./images/solaire.gif";
+  }
+  if (e.target.classList == "imgSelect bonfire") {
+    gifBack.src = "./images/bonfire.gif";
+  }
+  if (e.target.classList == "imgSelect blackmage") {
+    gifBack.src = "./images/blackmage.gif";
   }
 });
 
