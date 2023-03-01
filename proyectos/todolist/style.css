@@ -63,6 +63,14 @@ section{
     transition: all 0.1s;
 }
 
+.gifcontainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   height: 300px;
+}
+
 .bonfire{
     display: flex;
     flex-direction: column;
@@ -513,5 +521,6 @@ section{
 }
 
 #gifBack{
-   max-width: 150px;
+   max-width: 300px;
+   max-height: 300px;
 }
