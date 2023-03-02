@@ -47,7 +47,7 @@ btnAdd.addEventListener("click", () => {
 });
 
 btnCancelar.addEventListener("click", () => {
-  if (cantidadDeTareas <= 0) {
+  if (cantidadDeTareas == 0) {
     bonfire.classList.toggle("hidden");
     agregarContainer.classList.toggle("active");
     btnAdd.classList.remove("hidden");
@@ -122,11 +122,18 @@ btnConfirmar.addEventListener("click", () => {
   tareaInput.value = "";
   descripcionTxt.value = "";
   select.value = "";
+
+  console.log(cantidadDeTareas);
 });
 
 document.addEventListener("click", (e) => {
   if (e.target.classList == "remover") {
     e.target.parentNode.parentNode.parentNode.remove();
+    cantidadDeTareas--;
+    if (cantidadDeTareas == 0) {
+      bonfire.classList.remove("hidden");
+      tareas.style.display = "none";
+    }
   }
 });
 
@@ -154,5 +161,3 @@ document.addEventListener("click", (e) => {
     gifBack.src = "./images/miki.gif";
   }
 });
-
-//let cantidadDeTareas = 0;
