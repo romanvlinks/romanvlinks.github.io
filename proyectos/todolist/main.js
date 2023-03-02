@@ -68,41 +68,42 @@ btnConfirmar.addEventListener("click", () => {
     .classList[1];
   console.log(nombreTarea, tipoDeTarea, descripcion, color);
 
-  switch (tipoDeTarea) {
-    case "trabajo":
-      imgTipo = "./images/tipo/trabajo.svg";
-      break;
-    case "personal":
-      imgTipo = "./images/tipo/personal.svg";
-      break;
-    case "domestica":
-      imgTipo = "./images/tipo/casa.svg";
-      break;
-    case "Entretenimiento":
-      imgTipo = "./images/tipo/gaming.svg";
-  }
+  if (nombreTarea != "" && descripcion != "") {
+    switch (tipoDeTarea) {
+      case "trabajo":
+        imgTipo = "./images/tipo/trabajo.svg";
+        break;
+      case "personal":
+        imgTipo = "./images/tipo/personal.svg";
+        break;
+      case "domestica":
+        imgTipo = "./images/tipo/casa.svg";
+        break;
+      case "Entretenimiento":
+        imgTipo = "./images/tipo/gaming.svg";
+    }
 
-  switch (color) {
-    case "purpura":
-      colorFondo = "purpura";
-      break;
-    case "rojo":
-      colorFondo = "rojo";
-      break;
-    case "verde":
-      colorFondo = "verde";
-      break;
-    case "amarillo":
-      colorFondo = "amarillo";
-  }
+    switch (color) {
+      case "purpura":
+        colorFondo = "purpura";
+        break;
+      case "rojo":
+        colorFondo = "rojo";
+        break;
+      case "verde":
+        colorFondo = "verde";
+        break;
+      case "amarillo":
+        colorFondo = "amarillo";
+    }
 
-  cantidadDeTareas++;
-  agregarContainer.classList.add("hidden");
-  agregarContainer.classList.remove("active");
-  tareas.style.display = "flex";
-  btnAdd.classList.toggle("hidden");
+    cantidadDeTareas++;
+    agregarContainer.classList.add("hidden");
+    agregarContainer.classList.remove("active");
+    tareas.style.display = "flex";
+    btnAdd.classList.toggle("hidden");
 
-  tareaPendiente = `<div id="tareasPendientes" class="tareaspendientes">
+    tareaPendiente = `<div id="tareasPendientes" class="tareaspendientes">
   <div class="colortarea ${colorFondo}">
     <img src="${imgTipo}" alt="" />
   </div>
@@ -117,13 +118,16 @@ btnConfirmar.addEventListener("click", () => {
     </button>
   </div>
 </div>`;
-  tareas.innerHTML += tareaPendiente;
+    tareas.innerHTML += tareaPendiente;
 
-  tareaInput.value = "";
-  descripcionTxt.value = "";
-  select.value = "";
+    tareaInput.value = "";
+    descripcionTxt.value = "";
+    select.value = "";
 
-  console.log(cantidadDeTareas);
+    console.log(cantidadDeTareas);
+  } else {
+    alert("falta data jej");
+  }
 });
 
 document.addEventListener("click", (e) => {
