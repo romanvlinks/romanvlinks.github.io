@@ -419,7 +419,7 @@ section{
 }
 
 #completada:checked{
-   background-color: #7CBE0F;
+   background-color: #000;
    background-image: url(./images/check.svg);
    background-repeat: no-repeat;
    background-position: center;
