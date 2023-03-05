@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+}
+
+/*---HEADER---*/
+nav{
+    margin-top: 30px;
+}
+
+nav li{
+    display: inline-block;
+} 
+
+.pfp{
+    width: 180px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),-5px 7px 200px rgba(222, 0, 0, 0.25);  
+}
+
+
+
+.name{
+    text-align: center;
+   
+}
+
+.linkname{
+    text-decoration: none;
+    
+}
+
+.linkname:hover{
+    text-decoration: underline;
+}
+
+header ul{
+    display: block;
+    text-align: center;
+}
+
+#icons-nav{
+    width: 40px;
+    transition: all .1s;
+}
+
+#icons-nav:hover{
+    translate: 0px -1px;
+}
+
+
+
+.shadow-icon{
+    display: block;
+   text-align: center;
+}
+
+#red-shadow{
+    width: 40px;
+}
+
+
+
+
+/*---SECTION---*/
+section ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section p{
+    
+    text-align: center center;
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+section{
+    margin-top: 30px;
+    min-height: 50vh;
+}
+
+.nick{
+    color:#FF1010;
+}
+
+#spotify{
+    padding-top: 12px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #D9D9D9;
+    color: #121212;
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1);
+    transition: all 0.2s;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+#steam{
+    padding-top: 12px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #D9D9D9;
+    color: #121212; 
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1); 
+    transition: all 0.2s;  
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+#twitch{
+    padding-top: 12px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #D9D9D9;
+    color: #121212;
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1);
+    transition: all 0.2s;
+    border-radius: 6px;
+    margin-bottom: 5px;
+   
+}
+
+#proyectos{
+    padding-top: 12px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #D9D9D9;
+    color: #121212; 
+    box-shadow: -4px 4px 0px 0px rgba(195,15,17,1); 
+    transition: all 0.2s;  
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+/*HOVERS BUTTONS SECTION*/
+
+#spotify:hover{
+    background-position: 50%;
+    background-color: #1DB954;
+    background-image: url(/images/icons/spotify.png);
+    background-repeat: no-repeat;
+    background-size: 40px;   
+    border: none;
+    box-shadow: 1px 1px 49px -27px rgba(0,0,0,0.75) inset;
+}
+
+#spotify:hover p{
+    display: none;
+}
+
+#spotify:active{
+    background-size: 30px;
+}
+
+
+#steam:hover{
+    background-position: 50%;
+    background-color: #1DB954;
+    background-image: url(/images/icons/steam.png);
+    background-repeat: no-repeat;
+    background-size: 38px; 
+    background-color: black;
+    border: none;
+    box-shadow: 1px 1px 49px -27px rgba(0,0,0,0.75) inset;
+}
+
+#steam:hover p{
+    display: none;
+}
+
+#steam:active{
+    background-size: 30px;
+}
+
+#twitch:hover{
+    background-position: 50%;
+    background-image: url(/images/icons/twitch.png);
+    background-repeat: no-repeat;
+    background-size: 30px;   
+    background-color: #6441A4;
+    border: none;
+    box-shadow: 1px 1px 49px -27px rgba(0,0,0,0.75) inset;
+}
+
+#twitch:hover p{
+    display: none;
+}
+
+#twitch:active{
+    background-size: 25px;
+}
+
+#proyectos:hover{
+    background-position: 50%;
+    background-image: url(/images/icons/folder.png);
+    background-repeat: no-repeat;
+    background-size: 35px;   
+    background-color: #FEC13E;
+    border: none;
+    box-shadow: 1px 1px 49px -27px rgba(0,0,0,0.75) inset;
+}
+
+#proyectos:hover p{
+    display: none;
+}
+
+#proyectos:active{
+    background-size: 25px;
+}
+
+
+section li:nth-child(1){
+    margin-top: 40px;
+}
+
+
+
+
+section ul{
+    
+    text-decoration: none;
+    list-style: none;
+}
+
+section ul li{
+    margin-bottom: 10px;
+}
+
+section ul li a {
+    text-decoration: none;
+}
+
+section ul li a p{
+    color: black;
+}
+
+/*---FOOTER---*/
+
+footer{
+padding-top: 12px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#hr{
+    border: 1.9px solid;
+    border-color: #C30F11;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
