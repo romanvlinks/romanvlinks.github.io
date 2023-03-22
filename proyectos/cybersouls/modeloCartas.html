@@ -1,0 +1,51 @@
+<div class="cartasPersonajes ${element.type}" id="cartasPersonajes${numero}">
+  <div id="nickJugadores">
+    <p class="nicksJugadores">
+      Carta ${numeroDeCarta2}/${cartasJugador1.length} de ${inputName1.value}
+    </p>
+  </div>
+  <div class="card" id="card">
+    <div class="cardPower" id="cardPower">{element.power}</div>
+    <div class="cardImg" style="background-image: url(${element.img})"></div>
+    <div id="cardName" class="cardName">
+      <p class="characterName" id="characterName">${element.nombre}</p>
+    </div>
+  </div>
+  <div class="cardDescripcion">
+    <p class="characterDescription" id="characterDescription">
+      ${element.descripcion}
+    </p>
+  </div>
+</div>
+
+<div class="resultados" id="resultados">
+  <h1>El ganador fue!</h1>
+  <div class="jugador1resultado">
+    <p>Nombre Jugador 1</p>
+    <div class="contImgRes">
+      <img class="imgRes" src="" alt="" />
+      <img class="imgRes" src="" alt="" />
+      <img class="imgRes" src="" alt="" />
+    </div>
+  </div>
+  <div class="jugador2resultado">
+    <p>Nombre Jugador 2</p>
+    <div class="contImgRes">
+      <img class="imgRes" src="" alt="" />
+      <img class="imgRes" src="" alt="" />
+      <img class="imgRes" src="" alt="" />
+    </div>
+  </div>
+  <button class="guardarResultado" id="btnGuardarResultado">
+    Guardar resultado
+  </button>
+  <button class="guardarResultado" id="btnSalir">Salir</button>
+</div>
+
+<div id="containerGanador" class="containerGanador">
+  <div class="vs" id="vs">
+    <p>Onur</p>
+    <p>vs</p>
+    <p>Charly Belt</p>
+  </div>
+</div>

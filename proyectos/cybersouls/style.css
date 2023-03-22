@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  background-color: #0f1217;
+  width: 400px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.title {
+  color: white;
+  font-family: Julius Sans One;
+  font-size: 28px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*Primer pantalla default display = flex */
+
+.play {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descGame {
+  color: #fff;
+  font-family: Julius Sans One;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#jugar-inicio {
+  width: 208px;
+  height: 57px;
+  background-color: #292929;
+  border-radius: 8px;
+  border: none;
+  transition: 0.2s all;
+}
+
+#jugar-inicio:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  background-color: #ff6b00;
+}
+
+.btnJugar {
+  color: white;
+  font-family: Julius Sans One;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/* JUGADORES MENU display default = none*/
+
+#jugadoresMenu {
+  display: none;
+  flex-direction: column;
+}
+
+.titleJugadores {
+  color: white;
+  font-family: Julius Sans One;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.jugadoresInicio {
+  display: flex;
+  width: 312px;
+  height: 530px;
+  background-color: #292929;
+  border-radius: 8px;
+  margin-top: 70px;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputName {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 30px 0px;
+}
+
+.jugadoresName {
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.inputJugadores {
+  text-align: center;
+  width: 220;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.2s all;
+}
+.inputJugadores:focus-visible {
+  outline: none;
+}
+
+.playBtn {
+  width: 208px;
+  height: 57px;
+  background-color: #ff6b00;
+  border-radius: 8px;
+  border: none;
+  transition: 0.2s all;
+  margin-top: 100px;
+}
+
+.jugarBtn {
+  color: white;
+  font-family: Julius Sans One;
+  font-weight: lighter;
+  font-size: 20px;
+  transition: 0.2s all;
+}
+
+.playBtn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+/* LOADER default display = none */
+
+#loader {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p-loader {
+  color: #fff;
+  font-family: Julius Sans One;
+}
+
+/* GAME Juego ya iniciado default display = none */
+
+.game {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* CARTAS PERSONAJES IN GAME */
+
+.titleIngame {
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: Julius Sans One;
+  font-weight: lighter;
+  font-size: 26px;
+  display: inline-block;
+}
+
+#cardIngame {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  overflow: auto;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.cartasPersonajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 27px;
+  width: 346px;
+  height: 600px;
+  background: linear-gradient(
+    162.63deg,
+    #000000 -42.3%,
+    rgba(135, 135, 135, 0) 112.19%
+  );
+  border-radius: 8px;
+}
+
+.cartasPersonajes:nth-child(6) {
+  margin-right: 50px;
+}
+
+.rare {
+  background: linear-gradient(
+    0.31deg,
+    #ff6b00 -28.18%,
+    rgba(135, 135, 135, 0) 136.29%
+  );
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 410px;
+  border-radius: 8px;
+  border: 1px solid #121111;
+
+  background-repeat: no-repeat;
+}
+
+.cardImg {
+  height: 365px;
+  background-image: url(./cards/demonioRefugio.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.cardName {
+  display: flex;
+  height: 80px;
+  padding: 5px;
+  width: 100%;
+  background-color: #121111;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.characterName {
+  color: white;
+  font-family: Julius Sans One;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cardDescripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 120px;
+  background: linear-gradient(
+    220.9deg,
+    #121211 -24.82%,
+    rgba(18, 17, 17, 0) 160.86%
+  );
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px;
+}
+
+.cardPower {
+  display: flex;
+  background-color: #ff6b00;
+  text-align: center;
+
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.characterDescription {
+  color: white;
+  font-family: Julius Sans One;
+  font-weight: lighter;
+  font-size: 14px;
+  text-align: center;
+}
+
+#btnPasar {
+  display: flex;
+  margin-top: 30px;
+  gap: 0px 80px;
+}
+
+.btn-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ff6b00;
+  border: none;
+  background-image: url(./images/prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s;
+}
+
+.btn-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ff6b00;
+  border: none;
+  background-image: url(./images/next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-prev:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-next:active {
+  transform: scale(0.8);
+}
+
+.btn-prev:active {
+  transform: scale(0.8);
+}
+
+#nickJugadores {
+  margin-bottom: 10px;
+}
+.nicksJugadores {
+  color: white;
+  font-family: Julius Sans One;
+  font-weight: lighter;
+  font-size: 14px;
+  text-align: center;
+}
+
+.reiniciar {
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 330px;
+  background-image: url(./images/reload.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ff6b00;
+  border: none;
+  transition: all 0.2s;
+}
+
+.reiniciar:hover {
+  cursor: pointer;
+  transform: rotate(180deg) scale(1.1);
+}
+.reiniciar:active {
+  transform: scale(0.8);
+}
+
+/* REINICIAR MODAL */
+
+.cerrarModalReiniciar {
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 300px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ff6b00;
+  outline: none;
+  border: none;
+  transition: all 0.2s;
+  background-image: url(./images/x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+.cerrarModalReiniciar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.reiniciarModal {
+  display: none;
+  margin-top: 230px;
+  position: fixed;
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #292929;
+  gap: 0px 30px;
+  border: 3px solid #ff6b00;
+}
+
+#btn-reiniciar {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #ff6b00;
+  border: none;
+  transition: all 0.2s;
+}
+#btn-verRes {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #ff6b00;
+  border: none;
+  transition: all 0.2s;
+}
+
+#btn-reiniciar:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+#btn-verRes:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.resultados {
+  font-family: Julius Sans One;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 150px;
+  width: 300px;
+  height: 400px;
+  background-color: #0f1217;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #ff6b00;
+}
+
+#resultadosModalMain {
+  display: flex;
+  position: fixed;
+}
+
+.resultados p,
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.contImgRes {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 10px;
+}
+.imgRes {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.jugador1resultado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 0px;
+}
+.jugador2resultado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 0px;
+}
+
+.guardarResultado {
+  width: 200px;
+  height: 30px;
+  background-color: #ff6b00;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s;
+}
+.guardarResultado:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.guardarResultado:active {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.active {
+  display: flex;
+}
+
+#reiniciarMainModal {
+  display: none;
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  justify-content: center;
+}
+
+.verResultadoBtnMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  height: 57px;
+  border-radius: 8px;
+  background-color: #292929;
+  border: 1px solid #ff6b00;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+.verResultadoBtnMain:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+/* MODAL PARA MOSTRAR RESULTADOS GANADORES display default> none */
+
+.verResultadosModal {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  width: 300px;
+  height: 600px;
+  border-radius: 8px;
+  background-color: #292929;
+  border: 2px solid #ff6b00;
+  margin-top: 105px;
+}
+
+.containerGanador {
+  display: flex;
+  width: 100%;
+  background-color: #292929;
+  border-radius: 8px;
+  border-bottom: 2px solid #ff6b00;
+  height: 50px;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.containerGanador:hover {
+  cursor: pointer;
+  background-color: #ff6b00;
+}
+
+.vs {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.vs p {
+  color: #fff;
+  font-family: Julius Sans One;
+}
+
+.btnCerrarModalVerResultados {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  border-radius: 100%;
+  background-color: #ff6b00;
+  border: none;
+  margin-top: -15px;
+  margin-left: 280px;
+  background-image: url(/images/x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px;
+  transition: all 0.2s;
+}
+.btnCerrarModalVerResultados:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.activeBtnOrange {
+  background-color: #ff6b00;
+}

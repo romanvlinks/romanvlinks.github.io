@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSouls</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="section">
+      <div id="playMenu" class="play">
+        <h1 class="title">< cybersouls ></h1>
+
+        <p class="descGame">
+          En un principio, el mundo era un lugar sin forma envuelto en niebla,
+          con riscos grises y grandes arboles, donde reinaban los Dragones
+          Eternos, pero entonces llegó el fuego, y con él, la disparidad, frío y
+          calor, vida y muerte, luz y oscuridad.
+        </p>
+        <img src="./images/bonfiregif.gif" alt="" />
+        <button id="jugar-inicio"><p class="btnJugar">Jugar</p></button>
+      </div>
+      <div id="jugadoresMenu">
+        <h1 class="titleJugadores">< cybersouls ></h1>
+
+        <div class="jugadoresInicio">
+          <div class="inputName">
+            <div class="jugador1">
+              <p class="jugadoresName">Jugador 1</p>
+              <input
+                placeholder="Ingrese su nombre"
+                class="inputJugadores"
+                type="text"
+                name=""
+                id="inputName1"
+              />
+            </div>
+            <div class="jugador2">
+              <p class="jugadoresName">Jugador 2</p>
+              <input
+                placeholder="Ingrese su nombre"
+                class="inputJugadores"
+                type="text"
+                name=""
+                id="inputName2"
+              />
+            </div>
+          </div>
+          <button class="playBtn" id="play">
+            <p class="jugarBtn">Comenzar</p>
+          </button>
+          <button id="mostrarResultadoMain" class="verResultadoBtnMain">
+            <p class="jugarBtn">Ver resultados</p>
+          </button>
+        </div>
+      </div>
+      <div id="loader">
+        <h1 class="title">< cybersouls ></h1>
+        <img src="./images/bonfiregif.gif" alt="" />
+        <p class="p-loader">Cargando...</p>
+      </div>
+      <div class="game" id="game">
+        <div class="reiniciarModal" id="reiniciarModal">
+          <button
+            class="cerrarModalReiniciar"
+            id="cerrarModalReiniciar"
+          ></button>
+          <button id="btn-reiniciar">Volver a jugar</button>
+          <button id="btn-verRes">Ver resultados</button>
+        </div>
+        <h1 id="nombreJugadoresInCards" class="titleIngame">< cybersouls ></h1>
+        <button class="reiniciar" id="reiniciar"></button>
+        <div id="cardIngame"></div>
+        <div id="btnPasar">
+          <button class="btn-prev" id="prev"></button
+          ><button class="btn-next" id="next"></button>
+        </div>
+        <div id="reiniciarMainModal"></div>
+      </div>
+      <div class="verResultadosModal" id="verResultadosModal">
+        <button
+          onclick="cerrarModalVerResultado()"
+          class="btnCerrarModalVerResultados"
+          id="cerrarVerResultadosModal"
+        ></button>
+        <!-- AQUI Hacer un innerhtml con cada partida guardada-->
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
