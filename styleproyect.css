@@ -135,6 +135,32 @@ section {
   margin-bottom: 5px;
 }
 
+#kitichat {
+  padding-top: 12px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  color: #121212;
+  box-shadow: -4px 4px 0px 0px rgba(195, 15, 17, 1);
+  transition: all 0.2s;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+#kitistore {
+  padding-top: 12px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  color: #121212;
+  box-shadow: -4px 4px 0px 0px rgba(195, 15, 17, 1);
+  transition: all 0.2s;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
 #proyectos {
   padding-top: 12px;
   display: block;
@@ -203,6 +229,42 @@ section {
 
 #twitch:active {
   background-size: 35px;
+}
+
+#kitichat:hover {
+  background-position: 50%;
+  background-image: url(./images/faviconkc.svg);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  background-color: #0f1217;
+  border: none;
+  box-shadow: 1px 1px 49px -27px rgba(0, 0, 0, 0.75) inset;
+}
+
+#kitichat:hover p {
+  display: none;
+}
+
+#kitichat:active {
+  background-size: 24px;
+}
+
+#kitistore:hover {
+  background-position: 50%;
+  background-image: url(./images/faviconks.svg);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  background-color: #0f1217;
+  border: none;
+  box-shadow: 1px 1px 49px -27px rgba(0, 0, 0, 0.75) inset;
+}
+
+#kitistore:hover p {
+  display: none;
+}
+
+#kitistore:active {
+  background-size: 24px;
 }
 
 #proyectos:hover {
